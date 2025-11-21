@@ -2,49 +2,139 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Nguyen Le Minh | Academic Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyen Le Minh | AI & Automotive Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Nguyen Le Minh</h1>
-    <p>AI & Automotive Engineering Student | Research Enthusiast</p>
-  </header>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I'm an engineering student passionate about Artificial Intelligence, Automotive Technology, and Computer Vision.
-      I enjoy exploring deep learning applications in autonomous systems and LiDAR-based perception.
-    </p>
-  </section>
+  <div class="container">
+    
+    <aside class="profile-card">
+      <div class="profile-header">
+        <img src="docs/images/image_acc.jpg" alt="Avatar" class="avatar">
+        <h1>Nguyen Le Minh</h1>
+        <p class="tagline">AI & Software Engineering Student</p>
+        <div class="badges">
+          <span class="badge">Automotive</span>
+          <span class="badge">Computer Vision</span>
+          <span class="badge">ROS 2</span>
+        </div>
+      </div>
 
-  <section class="research">
-    <h2>Research & Publications</h2>
-    <p>Here are my academic profiles and publications:</p>
-    <ul>
-      <li><a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank">📘 Google Scholar</a></li>
-      <li><a href="https://github.com/NguyenLeMinh-dev" target="_blank">💻 GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">🔗 LinkedIn</a></li>
-    </ul>
-  </section>
+      <div class="profile-info">
+        <p><i class="fa-solid fa-graduation-cap"></i> FPT University</p>
+        <p><i class="fa-solid fa-location-dot"></i> Can Tho, Vietnam</p>
+        <p><i class="fa-solid fa-envelope"></i> leminhhu.edu@gmail.com</p>
+      </div>
 
-  <section class="projects">
-    <h2>Highlighted Projects</h2>
-    <ul>
-      <li><b>LiDAR Tree Detection</b> – Developed a BEV segmentation model for LiDAR data using CBAM and knowledge distillation.</li>
-      <li><b>Book Recommendation System</b> – Built a Flask-based system to suggest books using KNN collaborative filtering.</li>
-      <li><b>Playlist You Need</b> – Connected Spotify Web API to recommend songs using Python and Flask.</li>
-    </ul>
-  </section>
+      <div class="social-links">
+        <a href="https://github.com/NguyenLeMinh-dev" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://scholar.google.com/citations?user=q2J_NNcAAAAJ&hl=vi" target="_blank"><i class="fa-solid fa-book"></i> Scholar</a>
+        <a href="https://www.linkedin.com/in/minh-nguyen-le-1153ba383/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </aside>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>📧 minh@example.com</p>
-  </section>
+    <main class="main-content">
+
+      <section class="card about-section">
+        <h2><i class="fa-solid fa-user-astronaut"></i> About Me</h2>
+        <p>
+          I am an engineering student passionate about <b>Artificial Intelligence</b>, <b>Automotive Technology</b>, and <b>Computer Vision</b>.
+          My research focuses on deep learning applications in autonomous systems and LiDAR-based perception. 
+          Currently mastering <b>ROS2</b> and <b>Gazebo</b> for robotics simulation.
+        </p>
+      </section>
+
+      <section class="projects-section">
+        <h2 class="section-title"><i class="fa-solid fa-code-branch"></i> Featured Projects</h2>
+        <div class="project-grid">
+          
+          <div class="card project-card">
+            <h3>LiDAR Tree Detection</h3>
+            <p>BEV segmentation model for LiDAR data using CBAM and knowledge distillation.</p>
+            <div class="tech-stack">
+              <span>Python</span><span>PyTorch</span>
+            </div>
+          </div>
+
+          <div class="card project-card">
+            <h3>Unitree Lidar L1 SLAM</h3>
+            <p>Tutorial and implementation for using Unitree Lidar L1 for SLAM and visualization.</p>
+            <div class="tech-stack">
+              <span>ROS2</span><span>C++</span>
+            </div>
+          </div>
+
+          <div class="card project-card">
+            <h3>Playlist You Need</h3>
+            <p>Spotify Web API integration to recommend songs based on mood.</p>
+            <div class="tech-stack">
+              <span>Flask</span><span>API</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="feed-section">
+        <h2 class="section-title"><i class="fa-solid fa-rss"></i> Knowledge Stream</h2>
+        <p class="feed-desc">Lưu trữ các bài viết hay, video thú vị và cập nhật trạng thái.</p>
+
+        <article class="card feed-item">
+          <div class="feed-header">
+            <img src="https://ui-avatars.com/api/?name=Minh+Nguyen&background=0f172a&color=fff" alt="Minh" class="feed-avatar">
+            <div>
+              <span class="feed-author">Nguyen Le Minh</span>
+              <span class="feed-date">November 18, 2025</span>
+            </div>
+          </div>
+          <div class="feed-content">
+            <p>Gần đây mình đang nghiên cứu về **YOLOv8** và thấy video giải thích này cực kỳ trực quan về kiến trúc mới của nó. Lưu lại để dành tham khảo cho đồ án sắp tới.</p>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/LNwODJXcvt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="feed-footer">
+            <span><i class="fa-solid fa-tag"></i> Deep Learning</span>
+            <span><i class="fa-solid fa-link"></i> Saved Resource</span>
+          </div>
+        </article>
+
+        <article class="card feed-item">
+          <div class="feed-header">
+            <img src="https://ui-avatars.com/api/?name=Minh+Nguyen&background=0f172a&color=fff" alt="Minh" class="feed-avatar">
+            <div>
+              <span class="feed-author">Nguyen Le Minh</span>
+              <span class="feed-date">November 15, 2025</span>
+            </div>
+          </div>
+          <div class="feed-content">
+            <p>Tìm thấy một repo tuyệt vời về **LiDAR Point Cloud Processing**. Nó bao gồm các thuật toán filtering cơ bản đến nâng cao dùng PCL.</p>
+            <a href="https://github.com/kwea123/kitti_object_vis" target="_blank" class="link-preview">
+              <div class="link-info">
+                <strong>kitti_object_vis</strong>
+                <small>github.com</small>
+                <p>Visualize KITTI object detection data (image, lidar, calibration, label) seamlessly.</p>
+              </div>
+            </a>
+          </div>
+          <div class="feed-footer">
+            <span><i class="fa-solid fa-tag"></i> LiDAR</span>
+            <span><i class="fa-brands fa-github"></i> Open Source</span>
+          </div>
+        </article>
+
+      </section>
+
+    </main>
+  </div>
 
   <footer>
-    <p>© 2025 Nguyen Le Minh | Hosted with ❤️ on GitHub Pages</p>
+    <p>© 2025 Nguyen Le Minh | Built for Knowledge Sharing</p>
   </footer>
+
 </body>
 </html>
